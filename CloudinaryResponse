@@ -1,0 +1,23 @@
+"image": {
+    "asset_id": "4943d319d350135f07e7549cba852873",
+    "public_id": "Blog/srljuznhyfdjo7prqurr",
+    "version": 1722538556,
+    "version_id": "f0f9e2f1e33c915b01dd7209c73db435",
+    "signature": "8d23ee94b038e94676caeb04c43e660cde995634",
+    "width": 1024,
+    "height": 682,
+    "format": "jpg",
+    "resource_type": "image",
+    "created_at": "2024-08-01T18:55:56Z",
+    "tags": [],
+    "bytes": 223025,
+    "type": "upload",
+    "etag": "0957f16323dc51db5f20371cc11ab0a6",
+    "placeholder": false,
+    "url": "http://res.cloudinary.com/ddxxpqvr2/image/upload/v1722538556/Blog/srljuznhyfdjo7prqurr.jpg",
+    "secure_url": "https://res.cloudinary.com/ddxxpqvr2/image/upload/v1722538556/Blog/srljuznhyfdjo7prqurr.jpg",
+    "asset_folder": "Blog",
+    "display_name": "srljuznhyfdjo7prqurr",
+    "original_filename": "Green",
+    "api_key": "697643225479672"
+}
