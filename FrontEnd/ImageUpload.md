@@ -1,56 +1,41 @@
-# prepend-http [![Build Status](https://travis-ci.org/sindresorhus/prepend-http.svg?branch=master)](https://travis-ci.org/sindresorhus/prepend-http)
+## Image Upload
 
-> Prepend `http://` to humanized URLs like `todomvc.com` and `localhost`
-
-
-## Install
-
-```
-$ npm install prepend-http
-```
-
-
-## Usage
+**Step-1 : Importing**
 
 ```js
-const prependHttp = require('prepend-http');
+import { useFormik } from 'formik';
+import * as yup from 'yup';
+```
 
-prependHttp('todomvc.com');
-//=> 'http://todomvc.com'
-
-prependHttp('localhost');
-//=> 'http://localhost'
-
-prependHttp('http://todomvc.com');
-//=> 'http://todomvc.com'
-
-prependHttp('todomvc.com', {https: true});
-//=> 'https://todomvc.com'
+**Step-2 : Create Schema in Yup**
+- this expression  can be on seperate folder 
+```js
+const sampleSchema = yup.object().shape({
+    image: yup
+      .mixed()
+      .required('Please add an image')
+      .test(
+        'fileSize',
+        'File size is too large. Maximum size is 2MB.',
+        (value) => value && value.size <= 2000000; // 2MB limit
+      )
+      .test(
+        'fileType',
+        'Unsupported file type. Please upload a JPEG, PNG, or GIF file.',
+        (value) =>
+          value &&
+          ['image/jpeg', 'image/png', 'image/gif'].includes(value.type)
+      ),
+});
 ```
 
 
-## API
+  ### [yup.mixed() Mixed Explanation](/FrontEnd/yup_mixed.md)
 
-### prependHttp(url, [options])
+  ### [yup.test() Yup Test Explanation](/FrontEnd/yup_test.md)
 
-#### url
-
-Type: `string`
-
-URL to prepend `http://` on.
-
-#### options
-
-Type: `Object`
-
-##### https
-
-Type: `boolean`<br>
-Default: `false`
-
-Prepend `https://` instead of `http://`.
+  ### [separate validation function](/FrontEnd/SeparateValidationFn.md) 
 
 
-## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+    
