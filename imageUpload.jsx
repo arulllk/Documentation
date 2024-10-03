@@ -46,8 +46,7 @@ function ImageUpload() {
       setFilePreview(URL.createObjectURL(file)); // Create a preview URL for the image
     }
     //manually set the field as touch
-    formik.setFieldTouched('image',true,true)
-   
+    formik.setFieldTouched('image',true,true)   
   };
 
   return (
