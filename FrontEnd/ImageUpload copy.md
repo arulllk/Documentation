@@ -1,6 +1,6 @@
-## Image Upload - ####
+## Image Upload
 
-**Step-1 : Importing **
+**Step-1 : Importing**
 
 ```js
 import { useFormik } from 'formik';
@@ -83,27 +83,6 @@ const sampleSchema = yup.object().shape({
       formik.setFieldValue('image', file);
       ```
       - `formik.setFieldValue`: This is a Formik method used to manually set the value of a field in Formik's form state.
-      - `'image'`: The name of the field in the Formik form (likely referring to a file input in the form).
+      - `image`: The name of the field in the Formik form (likely referring to a file input in the form).
       - `file`: The file object (retrieved in step 1) is assigned to the image field in Formik.
-      - **Purpose**: It ensures that Formik knows the file has been selected, so the form can process it (e.g., send the file in a submission).
-    
-    - ####  Create a preview URL for the file:
-      ```js
-          if (file) {
-            setFilePreview(URL.createObjectURL(file));
-          }
-      ```
-      - **Purpose**: This part creates a preview URL for the selected file (commonly an image).
-      - `URL.createObjectURL(file)`: This is a JavaScript function that generates a temporary URL that represents the file (usually an image) so that it can be displayed in the browser (e.g., as an <img> tag's src).
-      - `setFilePreview`: Presumably, this is a React state setter (e.g., useState) used to store the preview URL so it can be rendered later (e.g., in an image preview area).
-      - **Condition**: The code checks if a file was indeed selected before creating a preview UR
-
-    - #### Mark the field as touched:
-      ```js
-      formik.setFieldTouched('image', true, true);
-      ```
-      - `formik.setFieldTouched`: This is another Formik method used to mark a form field as "touched".
-      - `'image'`: The name of the field (the same field where the file is being set).
-      true: Marks the field as touched. A "touched" field in Formik is one where the user has interacted with it (e.g., selected a file in this case).
-      - The second `true` argument forces Formik to validate the field immediately.
-      - **Purpose**: Marking the field as touched is useful for triggering validation (e.g., showing error messages if the file is required or if there's an invalid file type). In this case, it's manually marking the `image` field as touched so validation can run.
+      - `Purpose`: It ensures that Formik knows the file has been selected, so the form can process it (e.g., send the file in a submission).

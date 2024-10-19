@@ -23,6 +23,7 @@
     ```
 
     #### Importing multiple schema to index file
+    The below line is enough
     ```js
     export { blogSchema } from './Blog';
     export { productSchema } from './Product';
