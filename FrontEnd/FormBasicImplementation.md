@@ -1,7 +1,7 @@
 # Basic form Implementation
 
 ### Below are the basic steps
-- **Create html element** - Make component styles for one component for input and one for select option etc
+- **Create html element** - Make different type of component for different type of input elements (One for input and one for select option) etc
 - **Setup initial values And capture the values**
 - **Making Form Validation**
 - **Send data** 
