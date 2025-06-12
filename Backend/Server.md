@@ -5,7 +5,7 @@
 ### Step 1: Connection String
 #### **Create a .env file** and add the connection string:
 ```env
-MONGO_URI = mongodb+srv://arulllk:1234@nodeexpressprojects.0zp0qgr.mongodb.net/TASK-MANAGER?retryWrites=true&w=majority
+MONGO_URI = mongodb+srv://<userId>:<password>@nodeexpressprojects.0zp0qgr.mongodb.net/<DOCUMENTNAME>?retryWrites=true&w=majority
 
 JWT_SECRET = sZmM0fBr1yjkkoSguaNDCWFsrIMX371e
 JWT_LIFETIME = 30d
