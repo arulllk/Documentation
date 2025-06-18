@@ -40,7 +40,6 @@ Your focus this week is building a real backend with Express and MongoDB, synced
 - Call `/api/products` from frontend (Next.js).
 - Render product name and price.
 - Handle loading state.
-
 ---
 
 ## ✅ Day 6: GET Product by ID
